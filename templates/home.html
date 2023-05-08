@@ -1,0 +1,225 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedPro - Home</title>
+  <link rel="stylesheet" href="{% static 'home.css'%}" />
+  <link rel="shortcut icon" href="{% static 'hero.png'%}" type="image/x-icon">
+
+
+</head>
+
+
+<body>
+  <div class="center" id="center">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+</div>
+
+
+<div id="bd">  
+  <section>
+    <nav>
+      <div>
+        <img src="{% static 'logo.jpg'%}" alt="logo" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <br><br><br><br><br>
+  <section id="home">
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hero-t">Welcome to Website of future</h1>
+          <h3 id="typing-effect"> </h3>
+          
+        </div>
+        <img src="{% static 'hero.png'%}" width="400" height="500" alt="Hero Image" />
+      </section>
+
+
+      <br>
+      <br><br><br><br>
+      <section class="features" id="Services">
+        <a href="form1/" style="text-decoration: none; color:#0C0024 ">
+        <div class="feature">
+          <img src="{% static 'home/OCR_logo.png'%}" alt="Feature 1" />
+          <h2>OCR Detection</h2>
+          <p>Get the accurate ocr from here</p>
+        </div>
+      </a>
+      <a href="threeopt" style="text-decoration: none; color:#0C0024 ">
+        <div class="feature">
+          <img src="{% static 'home/DD_logo.png'%}" style="width:155px; height:155px" alt="Feature 2" />
+          <h2><Disease href="">Disease Detection</h2>
+          <p>Detect various kind of diseases from daily life</p>
+        </div>
+      </a>
+        <a href="segment" style="text-decoration: none; color:#0C0024 ">
+        <div class="feature">
+          <img src="{% static 'home/Tumor_logo.png'%}" style="width:155px; height:155px" alt="Feature 3" />
+          <h2>Tumor Segmentation</h2>
+          <p>Detect various kind of tumor from any section of your body</p>
+        </div>
+      </a>
+        <a href="cancer" style="text-decoration: none; color:#0C0024">
+        <div class="feature">
+          <img src="{% static 'home/Cancer_logo.png'%}" style="width:155px; height:155px" alt="Feature 2" />
+          <h2>Cancer Prediction</h2>
+          <p>Help us to predict your have cancer or not</p>
+        </div>
+      </a>
+      </section>
+
+      {% comment %} <section class="action">
+        <h2>Steps to take forward</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="btn">Get Started</a>
+      </section> {% endcomment %}
+    </main>
+  </section>
+
+
+
+
+  <section>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" width="150%" alt="image1">
+        <div class="carousel-caption">
+          <h2>OCR Detection</h2>
+          <p>Health is not just the absence of disease, it's the state of complete physical, mental and social well-being.</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" width="150%" alt="image2">
+        <div class="carousel-caption">
+          <h2>Disease Detection</h2>
+          <p>The only way to keep your health is to eat what you don't want, drink what you don't like, and do what you'd rather not</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" width="150%" alt="image3">
+        <div class="carousel-caption">
+          <h2>Tumor Segmentation</h2>
+          <p>Good health is not something we can buy. However, it can be an extremely valuable savings account</p>
+        </div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?cs=srgb&dl=pexels-pixabay-268533.jpg&fm=jpg" width="150%" alt="image4">
+        <div class="carousel-caption">
+          <h2>Cancer Prediction</h2>
+          <p>The art of medicine consists in amusing the patient while nature cures the disease</p>
+        </div>
+      </div>
+      <!-- <a class="prev" onclick="prevSlide()">&#10094;</a>
+      <a class="next" onclick="nextSlide()">&#10095;</a> -->
+    </div>
+    
+  </section>
+
+  <br><br><br>
+
+
+  <section id="about">
+    <div class="head" style="text-align: center; font-size:4rem ;color: rgb(12, 0, 36);"><h2>About Us</h2></div>
+    <div class="container">
+      
+      <div class="box">
+        <img src="{% static 'raj.jpeg'%}" alt="Image 1">
+        <div class="info">
+          <h2>Raj Krishna</h2>
+          <p>6th Semester | DIT University</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="{% static 'harsheet.jpg'%}" alt="Image 2">
+        <div class="info">
+          <h2>Harsheet Sharma</h2>
+          <p>4th Semester | DIT University</p>
+        </div>
+      </div>
+      <div class="box">
+        <img src="{% static 'prabhat.jpg'%}" alt="Image 3">
+        <div class="info">
+          <h2>Prabhat Kumar</h2>
+          <p>4th Semester | DIT University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <br><br><br>
+
+  <section id="contact">
+    <div class="conta">
+      <div class="heading">
+          <br><br><br><br><br><br>
+        <h4>Contact Me</h4>
+        <div class="subheading">DEV-TAS | Dit University</div>
+      </div>
+
+      <div class="form-conta">
+        <form autocomplete="off">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="mb-4">
+            <label>
+              Message
+            </label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="butt">
+            Submit
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <br><br>
+
+  <section id="footer">
+    <footer>
+      <p>&copy; 2023 Designed & Developed by DEV-TAS</p>
+    </footer>
+  </section></div>
+
+  <script src={% static "home.js" %}></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+   
+    body{
+        background-color: #0093E9;
+        color:white;
+
+    }
+</style>
+<body>
+
+    <h2  id="dis" style="display:none">{{raw}}</h2>
+
+    <h2 style="margin:0 auto; text-align: center; margin-top: 40px;" id="p"></h2>
+    <h2 style="width:50%; margin:0 auto; padding: 3rem;" id="con">
+
+    </h2>
+<script>
+    var d = document.getElementById("dis")
+    d.style.display="none"
+    var dis=d.innerHTML
+    p=document.getElementById("p")
+    
+    var con = document.getElementById("con")
+    if(dis == "hii"){
+        con.innerHTML = "hello"
+    }
+    else if(dis == "brain_glioma"){
+        p.innerHTML="Brain Glioma"
+        con.innerHTML= "Glioma is a growth of cells that starts in the brain or spinal cord. The cells in a glioma look similar to healthy brain cells called glial cells. Glial cells surround nerve cells and help them function.As a glioma grows it forms a mass of cells called a tumor. The tumor can grow to press on brain or spinal cord tissue and cause symptoms. Symptoms depend on which part of the brain or spinal cord is affected."
+    }
+    else if(dis == "brain_menin"){
+        p.innerHTML="Brain Menin"
+        con.innerHTML= "A meningioma is a tumor that arises from the meninges — the membranes that surround the brain and spinal cord. Although not technically a brain tumor, it is included in this category because it may compress or squeeze the adjacent brain, nerves and vessels. Meningioma is the most common type of tumor that forms in the head."
+    }
+
+    else if(dis == "brain_tumor"){
+        p.innerHTML="Brain Tumor"
+        con.innerHTML= "A malignant brain tumour is a fast-growing cancer that spreads to other areas of the brain and spine.Generally, brain tumours are graded from 1 to 4, according to their behaviour, such as how fast they grow and how likely they are to grow back after treatment. A malignant brain tumour is either grade 3 or 4, whereas grade 1 or 2 tumours are usually classed as benign or non-cancerous. "
+    }
+
+    else if(dis == "crevix_dyk"){
+        p.innerHTML="Cervix Dyskeratotic"
+        con.innerHTML= "Dyskeratosis congenita (DC) is a rare inherited bone marrow failure syndrome. The spectrum of cancer susceptibility in this disorder of telomere biology has not been described. There were more than 500 cases of DC reported in the literature from 1910 to 2008; the National Cancer Institute (NCI) prospective DC cohort enrolled 50 cases from 2002 to 2007. Sixty cancers were reported in 52 literature cases, while 7 occurred among patients in the NCI DC cohort."
+    }
+
+    else if(dis == "cervix_koc"){
+        p.innerHTML="Cervix Koilocitotic"
+        con.innerHTML= "Koilocytosis in the cervix is a precursor for cervical cancer. The risk increasesTrusted Source when more koilocytes resulting from certain strains of HPV are present.A diagnosis of koilocytosis after a Pap smear or cervical biopsy increases the need for frequent cancer screenings. Your doctor will let you know when you need to get tested again. Monitoring may include screenings every three to six months, depending on your risk level."
+    }
+
+
+    else if(dis == "cervix_mep"){
+        p.innerHTML="Cervix Metaplastic"
+        con.innerHTML= "Squamous metaplasia is a noncancerous change in the cells that make up the tissue lining for organs and glands (epithelium). Most people have nonkeratinizing cervical squamous metaplasia. This condition doesn’t increase cancer risk. Keratinizing squamous metaplasia can turn into dysplasia, which may lead to cancer"
+    }
+
+    else if(dis == "cervix_pab"){
+        p.innerHTML="Cervix Parabasal"
+        con.innerHTML= "Parabasals are an uncommon finding on Pap smears of women with estrogen production or replacement hormone. These cells are often seen in patients who lack estrogen, including those who are premenstrual, post partum, taking estrogen-restricting hormones, or postmenopausa"
+    }
+
+    else if(dis == "cervix_sfi"){
+        p.innerHTML="Cervix Superficial Intermitat"
+        con.innerHTML= "Renal cell carcinoma is the most common type of adult kidney cancer, making up about 85% of diagnoses. This type of cancer develops in the proximal renal tubules that make up the kidney’s filtration system. There are thousands of these tiny filtration units in each kidney"
+    }
+
+    else if(dis == "kidney_normal"){
+        p.innerHTML="Renal Carcinoma"
+        con.innerHTML= "Renal cell carcinoma is the most common type of adult kidney cancer, making up about 85% of diagnoses. This type of cancer develops in the proximal renal tubules that make up the kidney’s filtration system. There are thousands of these tiny filtration units in each kidney"
+    }
+    else if(dis == "kidney_tumor"){
+        p.innerHTML="Kidney Tumor Cancer"
+        con.innerHTML= "Kidney cancer is the abnormal growth of cells in your kidney tissue. In time, these cells form a mass called a tumor. Cancer begins when something triggers a change in the cells, and they divide out of control."
+    }
+
+    else if(dis == "colon_aca"){
+        p.innerHTML="Colon Adenocarcinoma"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+
+    else if(dis == "colon_bnt"){
+        p.innerHTML="Colon Benign Tissue"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "lung_aca"){
+        p.innerHTML="Lung Adenocarcinoma"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "lung_bnt"){
+        p.innerHTML="Lung Benign Tissue"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "lung_scc"){
+        p.innerHTML="Lung Scamous Cell Carcinoma"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "lymph_cll"){
+        p.innerHTML="Chronic Lymphotic Leukemia"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "lymph_fl"){
+        p.innerHTML="Foscicular Lympha"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "lymph_mcl"){
+        p.innerHTML="Mental Cell Lymphoma"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "oral_normal"){
+        p.innerHTML="Oral Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "oral_scc"){
+        p.innerHTML="Oral Squamos Cell Carcinoma"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "breast_benign"){
+        p.innerHTML="Benign Breast Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "breast_malignant"){
+        p.innerHTML="Malignant Breast Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "all_benign"){
+        p.innerHTML="Bening Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "all_early"){
+        p.innerHTML="Early Stage Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "all_pre"){
+        p.innerHTML="Pre Stage Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else if(dis == "all_pro"){
+        p.innerHTML="Last Stage Cancer"
+        con.innerHTML= "Squamous cell carcinoma (SCC) of the cervix generally invades directly into the uterine wall, but in rare cases it spreads superficially to the inner surface of the uterus, thereby replacing the endometrium. This type is called superficial spreading SCC. In the present study we report two cases of this unusual form of cervical SCC"
+    }
+    else{
+        con.innerHTML="Loda Lassan"
+    }
+
+    
+</script>
+</body>
+
+</html>

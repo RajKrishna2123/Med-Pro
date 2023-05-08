@@ -1,0 +1,46 @@
+{% load static %}
+<link rel="stylesheet" href={% static 'form_nor/form_nor.css' %}>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class='cont'>
+    <h2></h2>
+    
+    <form action="liverclick/"  method="post" >
+      {% csrf_token %}
+      <div action="liverclick/">
+      <label for="name">Name:</label>
+      <input type="text"  id="name" name="name" placeholder="Name" required/><br/>
+
+      <label for="age">Age:</label>
+      <input type="number"  id="age" name="age" placeholder="Age" required/><br/>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value=""></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br/>
+
+      <label for="age">Direct Bilirubin:</label>
+      <input type="number"  id="bilirubin" name="bilirubin" placeholder="Bilirubin" required/><br/>
+
+      <label for="age">A/G (Albumin & Globulin Ratio):</label>
+      <input type="number"  id="Albumin & Globulin Ratio" name="albumin" placeholder="Albumin & Globulin Ratio" required/><br/>
+
+      <label for="age">Sgpt Alamine Aminotransferase:</label>
+      <input type="number"  id="sgpt" name="sgpt" placeholder="Sgpt Alamine Aminotransferase" required/><br/>
+
+      <label for="age">AAP:</label>
+      <input type="number"  id="Phosphotase" name="Phosphotase" placeholder="Alkaphos Alkaline Phosphotase" required/><br/>
+
+      <label for="age">Total Protein:</label>
+      <input type="number"  id="Protein" name="Protein" placeholder="Protein" required/><br/>
+      
+
+      <input type="submit" value="Submit" />
+    </div>
+    </form>
+  </div>
+</div>
+<script src={% static 'form_nor/form_nor.js' %}></script>

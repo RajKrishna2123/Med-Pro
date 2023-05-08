@@ -1,0 +1,104 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={% static 'heart/heart.css' %}>
+  
+  <title>Document</title>
+</head>
+<body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    position: fixed;
+    background-color: #0C0024;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    font-family: Arial, sans-serif; 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  
+  nav img {
+    margin-left:10px;
+    height: 50px; 
+    border-radius: 50%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 22px; 
+    transition: all 0.3s ease-in-out; 
+    border-bottom: 2px solid transparent; 
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00; 
+    border-bottom: 2px solid #ffcc00;
+  }
+  
+  footer {
+    background-color: rgb(12, 0, 36);
+    color: gold;
+    text-align: center;
+    padding: 20px;
+  }
+</style>
+  <section>
+    <nav>
+      <div>
+        <img src="{% static 'logo.jpg'%}" alt="logo" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <br><br>
+
+
+<div class="bg" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class='cont'>
+    <h2></h2>
+    <form action="oral_pred" method="post" enctype="multipart/form-data">
+      {%csrf_token%}
+      <label for="image_file">Select an image file:</label><br>
+      
+		  <input style="color:white" type="file" name="img_file"><br>
+		  <input  type="submit" value="Upload">
+    </form>
+  </div>
+</div>
+<script src="{% static 'form/form.js'%}"></script>
+
+</body>
+</html>

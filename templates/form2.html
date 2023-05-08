@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href={% static 'home/hero.png' %}>
+  
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <nav>
+      <div>
+        <img src="{% static 'logo.jpg'%}" alt="logo" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <br><br>
+<link rel="stylesheet" href="{%static 'form2/form_nor.css'%}">
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+  <div class='cont'>
+    <h2></h2>
+    <form action="liv_pred" method="post" onSubmit={handleSubmit}>
+      {%csrf_token%}
+      <label for="name">Name:</label>
+      <input type="text"  id="name" name="name" placeholder="Name" required/><br/>
+
+      <label for="age">Age:</label>
+      <input type="number"  id="age" name="Age_of_the_patient" placeholder="Age" required/><br/>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="Gender_of_the_patient" required>
+        <option value=""></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br/>
+
+      <label for="Direct_Bilirubin">Direct Bilirubin:</label>
+      <input class="pres" id="bilirubin" name="Direct_Bilirubin" placeholder="Bilirubin" required/><br/>
+
+      <label for="Albumin & Globulin Ratio">A/G (Albumin & Globulin Ratio):</label>
+      <input class="pres" id="Albumin & Globulin Ratio" name="A_G_Ratio_Albumin_and_Globulin_Ratio" placeholder="Albumin & Globulin Ratio" required/><br/>
+
+      <label for="Sgpt_Alamine_Aminotransferase">Sgpt Alamine Aminotransferase:</label>
+      <input class="pres" id="sgpt" name="Sgpt_Alamine_Aminotransferase" placeholder="Sgpt Alamine Aminotransferase" required/><br/>
+
+      <label for="Alkphos_Alkaline_Phosphotase">AAP:</label>
+      <input class="pres" id="Phosphotase" name="Alkphos_Alkaline_Phosphotase" placeholder="Alkaphos Alkaline Phosphotase" required/><br/>
+
+      <label for="age">Total Protein:</label>
+      <input  class="pres" id="Protein" name="Total_Protiens" placeholder="Protein" required/><br/>
+      
+
+      <input type="submit" value="Submit"/>
+    </form>
+  </div>
+</div>
+<script src="{%static 'form2/form_nor.js'%}"></script>
+</body>
+</html>

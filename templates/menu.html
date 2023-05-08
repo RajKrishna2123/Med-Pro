@@ -1,0 +1,184 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Menu</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: sans-serif;
+    background-color: #0093E9;
+    }
+
+    
+nav {
+    position: fixed;
+    background-color: #0C0024;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    font-family: Arial, sans-serif; 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  
+  nav img {
+    margin-left:10px;
+    height: 50px; 
+    border-radius: 50%; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  nav ul {
+    display: flex; 
+    list-style: none; 
+    margin: 0; 
+  }
+  
+  nav ul li {
+    margin: 15px;
+    
+  }
+  
+  nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 22px; 
+    transition: all 0.3s ease-in-out; 
+    border-bottom: 2px solid transparent; 
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00; 
+    border-bottom: 2px solid #ffcc00;
+  }
+
+
+    .features {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      
+      .feature {
+        max-width: 300px;
+        text-align: center;
+        margin: 10px;
+      }
+      
+      .feature img {
+        max-width: 100%;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        width: 42rem;
+        height: 12rem;
+      }
+      
+      .feature h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      
+      .feature p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      footer {
+        background-color: rgb(12, 0, 36);
+        color: gold;
+        text-align: center;
+        padding: 20px;
+      }
+</style>
+<body>
+    <section>
+        <nav>
+          <div>
+            <img src="{%static 'menu/logo.jpg'%}" alt="logo" />
+          </div>
+          <div>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="/">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    <br><br><br><br><br>
+    <section class="features" style="justify-content: center; align-items: center; ">
+      
+      <div class="feature" id="" >
+          
+          <a href="brain"><img src="{%static 'menu/brain.jpg'%}" alt="Feature 1" /></a>
+          <h2>Brain Cancer</h2>
+          
+        </div>
+        <div class="feature">
+          <a href="breast"><img src="{%static 'menu/breast.jpg'%}" alt="Feature 1" /></a>
+          <h2>Breast Cancer</h2>
+          
+        </div>
+        <div class="feature">
+          <a href="kidney"><img src="{%static 'menu/kidney.jpg'%}" alt="Feature 1" /></a>
+          <h2>Kidney Cancer</h2>
+          
+        </div>
+       
+      </section>
+      <section class="features" style="justify-content: center; align-items: center; ">
+        <div class="feature" id="" >
+          <a href="lung"><img src="{%static 'menu/lung.jpg'%}" alt="Feature 1" /></a>
+          <h2>Lung & Colon Cancer</h2>
+          
+        </div>
+        <div class="feature">
+          <a href="lym"><img src="{%static 'menu/lym.jpg'%}" alt="Feature 1" /></a>
+          <h2>Lymphoma</h2>
+          
+        </div>
+        <div class="feature">
+          <a href="oral"><img src="{%static 'menu/oral.jpg'%}" alt="Feature 1" /></a>
+          <h2>Oral Cancer</h2>
+          
+        </div>
+       
+      </section>
+
+      <section class="features" style="justify-content: center; align-items: center; ">
+        <div class="feature" id="" >
+          <a href="cervical"><img src="{%static 'menu/cervical.jpg'%}" alt="Feature 1" /></a>
+          <h2>Cerival Cancer</h2>
+          
+        </div>
+        <div class="feature">
+          <a href="all"><img src="{%static 'menu/all.jpg'%}" alt="Feature 1" /></a>
+          <h2>All</h2>
+          
+        </div>
+        
+       
+      </section>
+
+      <section id="footer">
+        <footer>
+          <p>&copy; 2023 Designed & Developed by DEV-TAS</p>
+        </footer>
+      </section>
+
+</body>
+</html>
